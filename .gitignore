@@ -1,0 +1,5 @@
+.vscode/
+.qmake.stash
+dirviewer
+main.o
+DirViewer/DirViewer_copy.h

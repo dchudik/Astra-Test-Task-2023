@@ -1,5 +1,4 @@
 #include "DirViewer.h"
-#include <QDebug>
 #include <QLineEdit>
 #include <QLabel>
 #include <QPushButton>
@@ -14,7 +13,6 @@ void DirViewer::onChangeFileNameFilter(const QString newText)
 void DirViewer::onClickSearchFiles()
 {
     this->textSearch = this->textSearchBuf;
-    qDebug() << "Text for search: " << this->textSearch;
     auto filterList = QStringList();
     // filterList.append("*.txt");
     QString filter("*" + this->textSearch + "*");

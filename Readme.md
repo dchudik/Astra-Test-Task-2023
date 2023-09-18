@@ -25,19 +25,60 @@ c)  Добавить QLineEdit виджет, который использова
 Интерфейс реализован в виде отдельного виджета.
 1. Для отображения файлов и директорий используются компоненты QTreeView
 2. Для ввода строки поиска QLineEdit
-3. Для фильтра по именам файлов используется QFileSystemModel
+3. Для фильтра по именам файлов и папок используется QFileSystemModel
 
 ### Комментарии:
 
 В задании не указано требуется ли рекурсивный поиск по папкам или нет.
 Если его надо сделать, то я бы попробовал следующие варианты:
 1. Через QProxyModel реализовать получение файлов и формирование модели.
-2. Сделать костомную модель для QTreeView и в неё поместить поместить список файлов
+2. Сделать костомную модель для QTreeView и в неё поместить список файлов который сформирую через рекурсивный поиск.
 
-### Скриншоты
+### Скриншоты Ubuntu
 
 1. Без фильтров
-![Без фильтров](/screenshots/without_filter.png?raw=true)
+![Без фильтров](/screenshots/ubuntu/without_filter.png)
 
-1. С фильтром
-![С фильтром](/screenshots/with_filter.png)
+2. С фильтром
+![С фильтром](/screenshots/ubuntu/with_filter.png)
+
+### Скриншоты Astra
+
+1. Без фильтров
+![Без фильтров](/screenshots/astra/without_filter.jpg)
+
+2. С фильтром
+![С фильтром](/screenshots/astra/with_filter.jpg)
+
+3. Информация об установленном Astra Linux
+![Astra Linux 1.7](/screenshots/astra/astra_installed.jpg)
+
+### Инструкция по запуску на Astra Linux
+
+1. Скачать пакеты git, make, qt5-default
+   
+   ```bash
+   sudo apt install git make qt5-default
+   ```
+
+2. Скачать исходный код
+
+    ```bash
+   git clone https://github.com/dchudik/Astra-Test-Task-2023
+   ```
+3. Перейти в папку
+   ```bash
+    cd Astra-Test-Task-2023/
+   ```
+4. Подготовить make файл
+    ```bash
+   qmake dirviewer.pro
+   ```
+5. Собрать программу через make
+   ```bash
+   make
+   ```
+6. Запустить программу
+   ```bash
+   ./dirviewer
+   ```

@@ -37,20 +37,25 @@ Tg: @dchudik
 ### Скриншоты Ubuntu
 
 1. Без фильтров
+
 ![Без фильтров](/screenshots/ubuntu/without_filter.png)
 
 2. С фильтром
+
 ![С фильтром](/screenshots/ubuntu/with_filter.png)
 
 ### Скриншоты Astra
 
 1. Без фильтров
+
 ![Без фильтров](/screenshots/astra/without_filter.jpg)
 
 2. С фильтром
+
 ![С фильтром](/screenshots/astra/with_filter.jpg)
 
 3. Информация об установленном Astra Linux
+   
 ![Astra Linux 1.7](/screenshots/astra/astra_installed.jpg)
 
 ### Инструкция по запуску на Astra Linux
